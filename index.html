@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>ESP32 Relay Control Dashboard</title>
+  <title>Room Automated Control Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
@@ -146,7 +146,7 @@
 </head>
 <body>
 
-  <h1>ESP32 Relay Control Dashboard</h1>
+  <h1>Room Automated Control Dashboard</h1>
 
   <!-- Login form -->
   <div id="loginForm">
@@ -188,7 +188,7 @@
   </div>
 
   <footer>
-    Created by Tech StudyCell
+    Created by MFS
   </footer>
 
   <!-- Firebase SDKs -->
@@ -199,20 +199,21 @@
   <script>
     // Firebase config
     const firebaseConfig = {
-	  apiKey: "AIzaSyBFzQJ8a1AuHJABCDvg6UJMxjmD_XPPPOg",
-	  authDomain: "esp32-relay-control-01.firebaseapp.com",
-	  databaseURL: "https://esp32-relay1-control-02-default-rtdb.europe-west1.firebasedatabase.app",
-	  projectId: "esp32-relay-control-01",
-	  storageBucket: "esp32-relay-control-02.firebasestorage.app",
-	  messagingSenderId: "1057958003190",
-	  appId: "1:1057958003190:web:d4200d0e99b5ed880507d7"
+	  	apiKey: "AIzaSyDCCE7x9NiaDSJZLKNpzddYtmr50F1t8ac",
+  		authDomain: "iot-automated-room.firebaseapp.com",
+  		databaseURL: "https://iot-automated-room-default-rtdb.firebaseio.com",
+  		projectId: "iot-automated-room",
+  		storageBucket: "iot-automated-room.firebasestorage.app",
+  		messagingSenderId: "182085474906",
+  		appId: "1:182085474906:web:e42d109fe4e5c146341663",
+  		measurementId: "G-DZECWSR7F0
 	};
 
     firebase.initializeApp(firebaseConfig);
 
     // Predefined login credentials (can be replaced with your logic)
-    const allowedEmail = "abc@gmail.com";
-    const allowedPassword = "90009550";
+    const allowedEmail = "email@gmail.com";
+    const allowedPassword = "90a90a;
 
     const loginForm = document.getElementById("loginForm");
     const dashboard = document.getElementById("dashboard");
@@ -294,4 +295,5 @@
     };
   </script>
 </body>
+
 </html>
